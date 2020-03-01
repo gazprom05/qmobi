@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import requests
 import json
 import time
@@ -41,9 +43,9 @@ try:
         quantity_usd = 1
         print('Ошибка формата ввода. В расчёт подставлена единица.')
     quantity_rub = quantity_usd * rate
-    print(f'Дата: {time.strftime("%d.%m.%y")}. Время: {time.strftime("%X")}. Курс рубля к доллару {full_rate}:1.'
-          f' При обмене {quantity_usd} долларов вы получите {int(quantity_rub)} руб. '
-          f'{int(quantity_rub % int(quantity_rub) * 100)} коп.')
+    print(f'Дата')
+    print(f'Дата: {time.strftime("%d.%m.%y")}. Время: {time.strftime("%X")}. Курс рубля к доллару {full_rate}:1.')
+    print(f' При обмене {quantity_usd} долларов вы получите {int(quantity_rub)} руб. {int(quantity_rub % int(quantity_rub) * 100)} коп.')
 
     message = {
         "Exchange": {
